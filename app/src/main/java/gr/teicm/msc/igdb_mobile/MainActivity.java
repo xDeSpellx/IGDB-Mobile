@@ -61,8 +61,6 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DataStore.Init(getApplicationContext());
-
         textTitle = (EditText)findViewById(R.id.editTextTitle);
         buttonSearch = (Button)findViewById(R.id.buttonSearch);
         dateFrom = (TextView)findViewById(R.id.dateFrom);

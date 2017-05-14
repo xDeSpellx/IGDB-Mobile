@@ -7,7 +7,7 @@ import org.json.JSONObject;
 
 public class JsonParser {
 
-    public static JSONObject getJsonObject(String jsonString){
+    /*public static JSONObject getJsonObject(String jsonString){
         JSONObject jObj = null;
 
         // try parse the string to a JSON object
@@ -19,6 +19,6 @@ public class JsonParser {
         }
 
         return jObj;
-    }
+    }*/
 
 }

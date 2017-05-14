@@ -43,28 +43,13 @@ public class DetailsActivity extends AppCompatActivity {
 
         findViews();
 
-        Intent intent = getIntent();
-        int bookPosition = intent.getIntExtra(DataStore.KEY_POSITION, 0);
 
-        book =  DataStore.Books.get(bookPosition);
-        String bookTitle = (String)book.get(DataStore.KEY_TITLE);
-        String bookAuthor = (String)book.get(DataStore.KEY_AUTHOR);
-        String bookGenreName = (String)book.get(DataStore.KEY_GENRENAME);
-        textViewTitle.setText(bookTitle);
-        textViewAuthor.setText(bookAuthor);
-        textViewGenre.setText(bookGenreName);
-
-        String bookCoverUrl = (String)book.get(DataStore.KEY_COVERURL);
-        imageLoader = new ImageLoader(getApplicationContext());
-        imageLoader.DisplayImage(bookCoverUrl, imageViewCover);
 
 
         buttonVisitWebsite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String bookAmazonUrl = (String)book.get(DataStore.KEY_AMAZONURL);
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(bookAmazonUrl));
-                startActivity(browserIntent);
+
             }
         });
     }

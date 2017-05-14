@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,18 +10,47 @@
         android:id="@+id/textViewInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_x="129dp"
+        android:layout_y="1dp"
         android:text="Games Found"
         android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
         tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="40dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ProgressBar
+        android:id="@+id/loadingSpin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_toLeftOf="@+id/textViewInfo"
+        android:layout_toStartOf="@+id/textViewInfo"
+        android:layout_x="159dp"
+        android:layout_y="217dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/noGamesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="236dp"
+        android:text="Darn! No games this time, try again with different criteria!"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="invisible" />
 
     <ListView
-        android:id="@+id/listViewBooks"
+        android:id="@+id/listViewGames"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="490dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textViewInfo" />
-</RelativeLayout>
+        android:layout_below="@+id/textViewInfo"
+        android:layout_x="2dp"
+        android:layout_y="21dp" />
+</AbsoluteLayout>

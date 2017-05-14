@@ -21,14 +21,14 @@
         android:layout_marginTop="10dp">
         <!-- Name Label -->
         <TextView
-            android:id="@+id/book_item_title"
+            android:id="@+id/gameTitle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:paddingTop="6dip"
             android:textColor="#dc6800"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:paddingTop="6dip"
-            android:paddingBottom="2dip" />
+            android:textStyle="bold" />
         <!-- Description label -->
         <TextView
             android:id="@+id/book_item_author"

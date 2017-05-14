@@ -13,7 +13,8 @@ import java.net.URLEncoder;
 
 public class NetworkUtils {
 
-    public static String getFileContentsFromFromUrl(String address) {
+    public static String getFileContentsFromFromUrl(String address)
+    {
         //
         //Necessary in order to be able to execute Network Calls on main Thread
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -28,12 +29,12 @@ public class NetworkUtils {
             conn.connect();
 
             InputStream is = conn.getInputStream();
-            BufferedReader reader =new BufferedReader(new InputStreamReader(is, "UTF-8"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
             contents = "";
-            String data="";
+            String data = "";
 
             //read data line-by-line
-            while ((data = reader.readLine()) != null){
+            while ((data = reader.readLine()) != null) {
                 contents += data + "\n";
             }
 
@@ -42,14 +43,14 @@ public class NetworkUtils {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         // return Contents
         return contents;
     }
 
-    public static String UrlEncode(String source){
+    public static String UrlEncode(String source) {
         String encoded = null;
         try {
             encoded = URLEncoder.encode(source, "UTF-8");
@@ -58,6 +59,8 @@ public class NetworkUtils {
         }
         return encoded;
     }
+
+
 
 
 }
