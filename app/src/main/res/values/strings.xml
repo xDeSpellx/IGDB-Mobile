@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IGDB_Mobile</string>
+    <string name="label_author">Author</string>
+    <string name="label_title">Title</string>
+</resources>

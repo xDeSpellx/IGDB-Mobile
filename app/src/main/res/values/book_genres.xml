@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="book_genres">
+        <item>(all)</item>
+        <item>Science Fiction</item>
+        <item>Fiction</item>
+        <item>Horror</item>
+        <item>Fantasy</item>
+        <item>Politics</item>
+        <item>Science</item>
+        <item>Children</item>
+        <item>Philosophy</item>
+        <item>Ancient Greece</item>
+        <item>Ancient Egypt</item>
+        <item>Middle Ages</item>
+        <item>Classical Literature</item>
+        <item>Poetry</item>
+    </string-array>
+</resources>
